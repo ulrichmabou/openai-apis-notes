@@ -49,5 +49,5 @@ curl https://api.openai.com/v1/edits \
 
 ---
 YOUR_API_KEY
-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
+
 ---
