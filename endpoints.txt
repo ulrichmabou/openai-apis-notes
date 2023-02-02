@@ -1,0 +1,53 @@
+Create completion
+
+Creates a completion for the provided prompt and parameters
+
+POST https://api.openai.com/v1/completions
+
+curl https://api.openai.com/v1/completions \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -d '{
+  "model": "text-davinci-003",
+  "prompt": "Say this is a test",
+  "max_tokens": 7,
+  "temperature": 0
+}'
+
+---
+
+List models
+
+Lists the currently available models, and provides basic information about 
+each one such as the owner and availability.
+
+GET https://api.openai.com/v1/models
+
+
+curl https://api.openai.com/v1/models \
+  -H 'Authorization: Bearer YOUR_API_KEY'
+
+---
+
+Edits
+
+Given a prompt and an instruction, the model will return 
+an edited version of the prompt.
+
+POST https://api.openai.com/v1/edits
+
+curl https://api.openai.com/v1/edits \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -d '{
+  "model": "text-davinci-edit-001",
+  "input": "What day of the wek is it?",
+  "instruction": "Fix the spelling mistakes"
+}'
+
+---
+
+---
+YOUR_API_KEY
+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
+---
