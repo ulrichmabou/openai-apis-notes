@@ -1,2 +1,2 @@
 * OpenAI models are non-deterministic, meaning that identical inputs can yield different outputs. Setting temperature to 0 will make the outputs mostly deterministic, but a small amount of variability may remain.
-*  **Important:** When using Javascript, all API calls should be made on the server-side only, since making calls in client-side browser code will expose your API key. See [here](tab:https://platform.openai.com/docs/api-reference/authentication) for more details.
+*  **Important:** When using Javascript, all API calls should be made on the server-side only, since making calls in client-side browser code will expose your API key. See [here](https://platform.openai.com/docs/api-reference/authentication) for more details.
